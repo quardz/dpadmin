@@ -1,10 +1,12 @@
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
     <a class="navbar-brand brand-logo" href="index.html">
-      <img src="assets/images/logo.svg" alt="logo" />
+      <img src="assets/images/logo.svg" alt="logo" class = "hidden"/>
+      Arweave Press
     </a>
     <a class="navbar-brand brand-logo-mini" href="index.html">
-      <img src="assets/images/logo-mini.svg" alt="logo" />
+      <img src="assets/images/logo-mini.svg" alt="logo"  class = "hidden"/>
+      Arweave Press
     </a>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-center">
@@ -14,17 +16,17 @@
           <span class="badge badge-primary ml-1">New</span>
         </a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item active hidden">
         <a href="#" class="nav-link">
           <i class="mdi mdi-elevation-rise"></i>Reports</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link hidden">
           <i class="mdi mdi-bookmark-plus-outline"></i>Score</a>
       </li>
     </ul>
     <ul class="navbar-nav navbar-nav-right">
-      <li class="nav-item dropdown" ngbDropdown>
+      <li class="nav-item dropdown hidden" ngbDropdown>
         <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" ngbDropdownToggle>
           <i class="mdi mdi-file-document-box"></i>
           <span class="count">7</span>
@@ -79,7 +81,7 @@
           </a>
         </div>
       </li>
-      <li class="nav-item dropdown" ngbDropdown>
+      <li class="nav-item dropdown hidden" ngbDropdown>
         <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" ngbDropdownToggle>
           <i class="mdi mdi mdi-bell"></i>
           <span class="count">4</span>
@@ -136,10 +138,10 @@
       </li>
       <li class="nav-item dropdown d-none d-xl-inline-block" ngbDropdown>
         <a class="nav-link dropdown-toggle" id="UserDropdown" ngbDropdownToggle>
-          <span class="profile-text">Hello, Richard V.Welsh !</span>
+          <span class="profile-text">Howdy, Adal!</span>
           <img class="img-xs rounded-circle" src="assets/images/faces/face1.jpg" alt="Profile image">
         </a>
-        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" ngbDropdownMenu aria-labelledby="UserDropdown">
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown hidden" ngbDropdownMenu aria-labelledby="UserDropdown">
           <a class="dropdown-item p-0">
             <div class="d-flex border-bottom">
               <div class="py-3 px-4 d-flex align-items-center justify-content-center">

@@ -1,5 +1,6 @@
 ////////// COLOR SYSTEM //////////
 $blue: #00aeef;
+$dpdark: #23282d;
 $indigo: #6610f2;
 $purple: #ab8ce4;
 $pink: #E91E63;
@@ -22,7 +23,7 @@ $theme-colors: ( primary: #308ee0, secondary: #e5e5e5, success: #00ce68, info: #
 $colors: ( blue: $blue, indigo: $indigo, purple: $purple, pink: $pink, red: $red, orange: $orange, yellow: $yellow, green: $green, teal: $teal, cyan: $cyan, white: $white, white-smoke: #f3f5f6, gray: $gray-600, gray-light: #8ba2b5, gray-lightest: #f7f7f9, gray-dark: #292b2c);
 ////////// COLOR SYSTEM //////////
 ////////// COLOR VARIABLES //////////
-$content-bg: #f2f8f9;
+$content-bg: #f1f1f1;
 $footer-bg: $content-bg;
 $footer-color: color(dark);
 $border-color: #f2f2f2;
@@ -39,13 +40,13 @@ $text-muted: #c2c2c2;
 $body-color: #212529;
 ////////// FONT VARIABLES //////////
 ////////// SIDEBAR ////////
-$sidebar-width-lg: 255px;
-$sidebar-width-mini: 185px;
-$sidebar-width-icon: 70px;
-$sidebar-light-bg: $white;
-$sidebar-light-menu-color: #4a4a4a;
-$sidebar-light-menu-active-bg: #fafbfc;
-$sidebar-light-menu-active-color: theme-color(primary);
+$sidebar-width-lg: 160px;
+$sidebar-width-mini: 36px;
+$sidebar-width-icon: 35px;
+$sidebar-light-bg: $dpdark;
+$sidebar-light-menu-color: #ffffff;
+$sidebar-light-menu-active-bg: #0073aa;
+$sidebar-light-menu-active-color: #ffffff;
 $sidebar-light-menu-hover-bg: $sidebar-light-menu-active-bg;
 $sidebar-light-menu-hover-color: $sidebar-light-menu-color;
 $sidebar-light-submenu-color: $sidebar-light-menu-color;
@@ -70,8 +71,8 @@ $sidebar-dark-profile-name-color: #404852;
 $sidebar-dark-profile-title-color: #8d9498;
 $sidebar-menu-font-size: 12px;
 $sidebar-icon-size: 16px;
-$sidebar-menu-padding: 16px 35px;
-$nav-link-height: 52px;
+$sidebar-menu-padding: 2px;
+$nav-link-height: 34px;
 $sidebar-submenu-padding: 0 0 0 4rem;
 $sidebar-submenu-font-size: $sidebar-menu-font-size;
 $sidebar-submenu-item-padding: .75rem 1rem;
@@ -87,11 +88,12 @@ $rtl-sidebar-submenu-padding: 0 3.45rem 0 0;
 ///////// SIDEBAR ////////
 ///////// SETTINGS PANEL ////////
 $settings-panel-width: 300px;
+
 ///////// HORIZONTAL MENU /////////
-$horizontal-navbar-height: 135px;
-$horizontal-top-menu-bg: $white;
+$horizontal-navbar-height: 32px;
+$horizontal-top-menu-bg: $dpdark;
 $horizontal-menu-padding: 0 1rem;
-$horizontal-menu-height: 57px;
+$horizontal-menu-height: 32px;
 $horizontal-bottom-menu-item-bg: $sidebar-light-menu-active-bg;
 $horizontal-menu-item-color: #202339;
 $horizontal-menu-submenu-color: $horizontal-menu-item-color;
@@ -99,19 +101,22 @@ $horizontal-menu-font-size: .875rem;
 $horizontal-menu-item-padding: .75rem 0;
 $horizontal-menu-icon-font-size: .9375rem;
 $horizontal-menu-submenu-item-padding: .85rem 0;
+
 ///////// HORIZONTAL MENU /////////
 ///////// HORIZONTAL MENU 2/////////
 $horizontal-2-navbar-height: 88px;
 $horizontal-2-navbar-bottom-height:50px;
 $horizontal-2-menu-item-color: $white;
-$horizontal-2-bg: $blue-teal-gradient;
+$horizontal-2-bg: $dpdark;
 $horizontal-2-brand-width: 125px;
+
 ///////// HORIZONTAL MENU 2/////////
 ///////// NAVBAR ////////
-$navbar-height: 63px;
-$navbar-light-color: #202339;
+$navbar-height: 32px;
+$navbar-light-color: $dpdark;
 $navbar-font-size: $sidebar-menu-font-size;
-$navbar-icon-font-size: 1.25rem;
+$navbar-icon-font-size: 0.5rem;
+
 ///////// NAVBAR ////////
 ///////// BUTTONS ////////
 $button-fixed-width: 120px;

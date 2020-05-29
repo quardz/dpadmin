@@ -5,11 +5,7 @@
 
 .navbar {
   font-family: $type-2;
-  background: $blue-teal-gradient;
-  transition: background $action-transition-duration $action-transition-timing-function;
-  -webkit-transition: background $action-transition-duration $action-transition-timing-function;
-  -moz-transition: background $action-transition-duration $action-transition-timing-function;
-  -ms-transition: background $action-transition-duration $action-transition-timing-function;
+  background: $dpdark;
   .navbar-brand-wrapper {
     transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
     -webkit-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;

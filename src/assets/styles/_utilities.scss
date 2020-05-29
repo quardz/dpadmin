@@ -182,6 +182,10 @@
   background: transparent;
 }
 
+.hidden {
+  display: none;
+}
+
 @each $color,
 $value in $theme-colors {
   .bg-inverse-#{$color} {
