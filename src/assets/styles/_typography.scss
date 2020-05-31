@@ -107,7 +107,9 @@ $value in $theme-colors {
 }
 
 .page-title {
-  color: $black;
+  color: #555555;
+  margin-bottom: 30px;
+  font-size: 30px;
   margin: 0.38rem 0 0.75rem;
 }
 

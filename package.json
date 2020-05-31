@@ -23,7 +23,10 @@
     "@mdi/font": "^5.3.45",
     "@ng-bootstrap/ng-bootstrap": "^6.1.0",
     "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
+    "@ngx-formly/bootstrap": "^5.0.0",
+    "@ngx-formly/core": "^5.0.0",
     "@ngx-formly/schematics": "^5.6.2",
+    "@tinymce/tinymce-angular": "^1.0.9",
     "bootstrap": "^4.5.0",
     "compass-mixins": "^0.12.10",
     "core-js": "^3.6.5",
@@ -32,10 +35,9 @@
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
     "rxjs-compat": "^6.5.5",
+    "tinymce": "^5.3.1",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2",
-    "@ngx-formly/core": "^5.0.0",
-    "@ngx-formly/bootstrap": "^5.0.0"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.7",

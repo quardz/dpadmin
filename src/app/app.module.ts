@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -29,7 +30,14 @@ import { TooltipsComponent } from './tooltips/tooltips.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { GeneralComponent } from './dpadmin/settings/general/general.component';
+import { FormlyHorizontalWrapper } from './dpadmin/settings/general/horizontal-wrapper';
 
+var _formly_settings = {
+    wrappers: [{ name: 'form-field-horizontal', component: FormlyHorizontalWrapper }],
+    validationMessages: [
+        { name: 'required', message: 'This field is required' },
+    ],
+};
 
 @NgModule({
   declarations: [
@@ -53,7 +61,8 @@ import { GeneralComponent } from './dpadmin/settings/general/general.component';
     TooltipsComponent,
     CarouselComponent,
     TabsComponent,
-    GeneralComponent
+    GeneralComponent,
+    FormlyHorizontalWrapper
   ],
   imports: [
     BrowserModule,
@@ -62,10 +71,12 @@ import { GeneralComponent } from './dpadmin/settings/general/general.component';
     FormsModule,
     NgbModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot(),
-    FormlyBootstrapModule
+    FormlyModule.forRoot(_formly_settings),
+    FormlyBootstrapModule,
+    EditorModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

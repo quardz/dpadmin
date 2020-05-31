@@ -6,8 +6,10 @@
   background: $sidebar-light-bg;
   font-family: $type-2;
   padding: 0;
+  padding-top: 15px;
   width: $sidebar-width-lg;
   z-index: 11;
+  padding-bottom: 300px;
   transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
   -webkit-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
   -moz-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
@@ -24,6 +26,14 @@
       .collapsing {
         background: $sidebar-light-menu-active-bg;
       }
+      ul {
+        display: none;
+      }     
+      &:hover ul {
+        display: block;
+        position: absolute;
+      }            
+
       .nav-link {
         align-items: center;
         display: flex;
@@ -31,6 +41,7 @@
         white-space: nowrap;
         height: $nav-link-height;
         color: $sidebar-light-menu-color;
+
         i {
           &.menu-arrow {
             margin-left: auto;
@@ -81,13 +92,18 @@
         &:hover {
           color: darken($sidebar-light-menu-color, 5%);
         }
+   
         &.active {
           color: $sidebar-light-menu-active-color;
           .menu-title,
           i {
             color: inherit;
           }
+          ul {
+            display: block;
+          }
         }
+
       }
       &.nav-profile {
         .nav-link {
