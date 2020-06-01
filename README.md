@@ -1,4 +1,6 @@
-# Dpadmin
+# Decentralised Wordpress, powered by Arweave Blockchain
+
+CMS similar to Wordpress but hosted on blockchain. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 

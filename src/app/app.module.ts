@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-import { EditorModule } from '@tinymce/tinymce-angular';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -31,6 +30,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { GeneralComponent } from './dpadmin/settings/general/general.component';
 import { FormlyHorizontalWrapper } from './dpadmin/settings/general/horizontal-wrapper';
+import { WritingComponent } from './dpadmin/settings/writing/writing.component';
+import { ReadingComponent } from './dpadmin/settings/reading/reading.component';
+import { DiscussionComponent } from './dpadmin/settings/discussion/discussion.component';
 
 var _formly_settings = {
     wrappers: [{ name: 'form-field-horizontal', component: FormlyHorizontalWrapper }],
@@ -62,7 +64,10 @@ var _formly_settings = {
     CarouselComponent,
     TabsComponent,
     GeneralComponent,
-    FormlyHorizontalWrapper
+    FormlyHorizontalWrapper,
+    WritingComponent,
+    ReadingComponent,
+    DiscussionComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +78,6 @@ var _formly_settings = {
     ReactiveFormsModule,
     FormlyModule.forRoot(_formly_settings),
     FormlyBootstrapModule,
-    EditorModule
   ],
   providers: [],
   bootstrap: [AppComponent],

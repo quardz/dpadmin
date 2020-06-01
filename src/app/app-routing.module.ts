@@ -18,26 +18,17 @@ import { TooltipsComponent } from './tooltips/tooltips.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { GeneralComponent } from './dpadmin/settings/general/general.component';
+import { WritingComponent } from './dpadmin/settings/writing/writing.component';
+import { ReadingComponent } from './dpadmin/settings/reading/reading.component';
+import { DiscussionComponent } from './dpadmin/settings/discussion/discussion.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'forms', component: FormsComponent },
-  { path: 'buttons', component: ButtonsComponent },
-  { path: 'tables', component: TablesComponent },
-  { path: 'icons', component: IconsComponent },
-  { path: 'typography', component: TypographyComponent },
-  { path: 'alerts', component: AlertsComponent },
-  { path: 'accordions', component: AccordionsComponent },
-  { path: 'badges', component: BadgesComponent },
-  { path: 'progressbar', component: ProgressbarComponent },
-  { path: 'breadcrumbs', component: BreadcrumbsComponent },
-  { path: 'pagination', component: PaginationComponent },
-  { path: 'dropdowns', component: DropdownComponent },
-  { path: 'tooltips', component: TooltipsComponent },
-  { path: 'carousel', component: CarouselComponent },
-  { path: 'tabs', component: TabsComponent },
-  { path: 'admin/settings/general', component: GeneralComponent }
+  { path: '', redirectTo: '/admin/dashboard', pathMatch: 'full' },
+  { path: 'admin/dashboard', component: DashboardComponent },
+  { path: 'admin/settings/general', component: GeneralComponent },
+  { path: 'admin/settings/writing', component: WritingComponent },
+  { path: 'admin/settings/reading', component: ReadingComponent },
+  { path: 'admin/settings/discussion', component: DiscussionComponent },
 ];
 
 @NgModule({
