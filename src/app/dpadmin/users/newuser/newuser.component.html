@@ -1,0 +1,9 @@
+<h1 class = "page-title">Add New User</h1>
+<div class = "">
+  <p>Create a brand new user and add them to this site.</p>
+</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
+  <button type="submit" class="btn btn-primary btn-md">Add New User</button>
+</form>
+  

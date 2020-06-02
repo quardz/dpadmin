@@ -11,7 +11,7 @@ import { FieldWrapper } from '@ngx-formly/core';
       </label>
       <div class="col-sm-6">
         <ng-template #fieldComponent></ng-template>
-        <div class = "desc">{{ to.description }}</div>
+        <small class = "desc">{{ to.description }}</small>
       </div>
 
       <div *ngIf="showError" class="col-sm-3 invalid-feedback d-block">

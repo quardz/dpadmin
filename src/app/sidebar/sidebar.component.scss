@@ -1,6 +1,11 @@
 /* Sidebar */
 
 @import '../../styles';
+
+app-sidebar {
+  background: $sidebar-light-bg;
+}
+
 .sidebar {
   min-height: calc(100vh - #{$navbar-height});
   background: $sidebar-light-bg;

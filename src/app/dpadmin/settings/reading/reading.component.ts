@@ -37,7 +37,7 @@ constructor() { }
       type: 'select',
       defaultValue: '1',
       wrappers: ['form-field-horizontal'],
-      hideExpression: 'model.show_on_front == "posts"',
+      
       templateOptions: {
         label: 'Homepage',
         required: false,

@@ -20,6 +20,8 @@
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
+    "@ckeditor/ckeditor5-angular": "^1.2.3",
+    "@ckeditor/ckeditor5-build-balloon": "^19.0.2",
     "@mdi/font": "^5.3.45",
     "@ng-bootstrap/ng-bootstrap": "^6.1.0",
     "@ng-bootstrap/schematics": "^2.0.0-alpha.1",

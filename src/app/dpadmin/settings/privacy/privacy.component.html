@@ -1,0 +1,19 @@
+<h1 class = "page-title">Privacy Settings</h1>
+
+<h5>Privacy Policy Page</h5>
+<div class = "">
+<p>As a website owner, you may need to follow national or international privacy laws. For example, you may need to create and display a Privacy Policy. If you already have a Privacy Policy page, please select it below. If not, please create one.</p>
+
+<p>The new page will include help and suggestions for your Privacy Policy. However, it is your responsibility to use those resources correctly, to provide the information that your Privacy Policy requires, and to keep that information current and accurate.</p>
+
+<p>After your Privacy Policy page is set, we suggest that you edit it. We would also suggest reviewing your Privacy Policy from time to time, especially after installing or updating any themes or plugins. There may be changes or new suggested information for you to consider adding to your policy.</p>
+
+<p>Edit or preview your Privacy Policy page content.</p>
+
+<p>Need help putting together your new Privacy Policy page? Check out our guide for recommendations on what content to include, along with policies suggested by your plugins and theme.</p>
+</div>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
+  <button type="submit" class="btn btn-primary btn-md">Use this page</button>
+</form>

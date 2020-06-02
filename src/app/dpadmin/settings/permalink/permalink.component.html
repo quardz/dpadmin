@@ -1,0 +1,10 @@
+<h1 class = "page-title">Permalink Settings</h1>
+
+<small class = "">
+Arweave Press offers you the ability to create a custom URL structure for your permalinks and archives. Custom URL structures can improve the aesthetics, usability, and forward-compatibility of your links. A number of tags are available, and here are some examples to get you started.
+</small>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
+  <button type="submit" class="btn btn-primary btn-md">Save Changes</button>
+</form>

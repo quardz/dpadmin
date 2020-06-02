@@ -33,6 +33,13 @@ import { FormlyHorizontalWrapper } from './dpadmin/settings/general/horizontal-w
 import { WritingComponent } from './dpadmin/settings/writing/writing.component';
 import { ReadingComponent } from './dpadmin/settings/reading/reading.component';
 import { DiscussionComponent } from './dpadmin/settings/discussion/discussion.component';
+import { MediaComponent } from './dpadmin/settings/media/media.component';
+import { PermalinkComponent } from './dpadmin/settings/permalink/permalink.component';
+import { PrivacyComponent } from './dpadmin/settings/privacy/privacy.component';
+import { ComingsoonComponent } from './dpadmin/comingsoon/comingsoon.component';
+import { NewuserComponent } from './dpadmin/users/newuser/newuser.component';
+import { TaxonomyComponent } from './dpadmin/taxonomy/taxonomy.component';
+import { TestcompComponent } from './testcomp/testcomp.component';
 
 var _formly_settings = {
     wrappers: [{ name: 'form-field-horizontal', component: FormlyHorizontalWrapper }],
@@ -67,7 +74,14 @@ var _formly_settings = {
     FormlyHorizontalWrapper,
     WritingComponent,
     ReadingComponent,
-    DiscussionComponent
+    DiscussionComponent,
+    MediaComponent,
+    PermalinkComponent,
+    PrivacyComponent,
+    ComingsoonComponent,
+    NewuserComponent,
+    TaxonomyComponent,
+    TestcompComponent
   ],
   imports: [
     BrowserModule,

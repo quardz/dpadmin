@@ -43,11 +43,13 @@
 @import "./assets/styles/reset";
 @import "./assets/styles/rating";
 @import "./assets/styles/layouts";
-@import "./assets/styles/tooltips";
+@import "./assets/styles/tooltips"; 
 @import "./assets/styles/responsive";
-@import "./assets/styles/misc";
+@import "./assets/styles/misc"; 
 @import "./assets/styles/utilities";
 @import "./assets/styles/demo";
 /* You can add global styles to this file, and also import other style files */
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+@import './app/dpadmin/settings/general/general.component';
+
