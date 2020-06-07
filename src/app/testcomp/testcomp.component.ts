@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+
+import { TaxtableComponent } from '../dpadmin/taxtable/taxtable.component';
+
 @Component({
   selector: 'app-testcomp',
   templateUrl: './testcomp.component.html',
@@ -7,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestcompComponent implements OnInit {
 
+
+
+
   constructor() { }
+
+  
 
   ngOnInit(): void {
   }

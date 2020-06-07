@@ -1,12 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
-import { AppRoutingModule } from './app-routing.module';
+import { Tabulator } from 'tabulator-tables';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+import { AppRoutingModule } from './app-routing.module';
+//import { EditorModule } from '@tinymce/tinymce-angular';
+import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
+
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -39,7 +46,10 @@ import { PrivacyComponent } from './dpadmin/settings/privacy/privacy.component';
 import { ComingsoonComponent } from './dpadmin/comingsoon/comingsoon.component';
 import { NewuserComponent } from './dpadmin/users/newuser/newuser.component';
 import { TaxonomyComponent } from './dpadmin/taxonomy/taxonomy.component';
+import { TaxtableComponent } from './dpadmin/taxtable/taxtable.component';
 import { TestcompComponent } from './testcomp/testcomp.component';
+import { DpeditorComponent } from './dpadmin/dpeditor/dpeditor.component';
+
 
 var _formly_settings = {
     wrappers: [{ name: 'form-field-horizontal', component: FormlyHorizontalWrapper }],
@@ -81,19 +91,29 @@ var _formly_settings = {
     ComingsoonComponent,
     NewuserComponent,
     TaxonomyComponent,
-    TestcompComponent
+    TaxtableComponent,
+    TestcompComponent,
+    DpeditorComponent,
+
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule, 
     NgbModule,
     ReactiveFormsModule,
     FormlyModule.forRoot(_formly_settings),
     FormlyBootstrapModule,
+    EditorModule,
+    
   ],
-  providers: [],
+  exports: [
+  ],
+
+  providers: [
+   // { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' },
+  ],
   bootstrap: [AppComponent],
 
 })
