@@ -6,7 +6,6 @@
 @import "../node_modules/compass-mixins/lib/animate";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/@mdi/font/scss/materialdesignicons";
-@import "../node_modules/font-awesome/scss/font-awesome";
 @import "./assets/styles/fonts";
 @import "./assets/styles/functions";
 @import "./assets/styles/mixins/background";
@@ -52,4 +51,6 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 @import './app/dpadmin/settings/general/general.component';
+@import './app/dpadmin/posts/postnew/postnew.component';
+
 //@import "../node_modules/ng-gutenberg/ng-gutenberg"

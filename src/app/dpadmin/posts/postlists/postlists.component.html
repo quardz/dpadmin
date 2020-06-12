@@ -1,0 +1,33 @@
+<div class = "row">
+  <div class = "col-sm-12">
+    <h1 class = "page-title">Pages <span><a class="btn btn-outline-primary btn-sm" routerLink="/admin/posts/new">Add New</a></span></h1>
+  </div>
+  <div class = "col-sm-6">
+    <ul class = "list-inline">
+      <li class="list-inline-item"><a href = "">All(3)</a> | <a href = "">Published(2)</a> | <a href = "">Draft(1)</a></li>
+    </ul>
+  <form class="form-inline formbulkaction">
+  <div class="form-group">
+    <select class="form-control" id="bulkaction">
+      <option value = "">Bulk Actions</option>
+      <option value = "edit">Edit</option>
+      <option value = "trash">Move to trash</option>
+    </select>
+  </div>
+  <a type="submit" class="btn btn-primary mb-2">Apply</a>
+  </form> 
+
+  </div>
+
+  <div class = "col-sm-6">
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <input type="text" class="form-control" id="search" value="">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Search Pages</button>
+</form>   
+  </div>  
+
+</div>
+
+<div id = "tabulator-posts"></div>

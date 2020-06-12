@@ -1,0 +1,94 @@
+
+<form #postform = "ngForm" (ngSubmit) = "onClickSubmit(postform.value)" >
+  <div class = "row">
+    <div class = "col-sm-9">
+
+  <div class="form-group">
+    <input type="text" class="form-control form-control-lg" id="post_title" placeholder="Title" name="post_title" #ctrl="ngModel" required ngModel>
+
+  <div class="input-group input-group-sm">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="post_name">Permalink: https://www.quardz.com/</span>
+    </div>
+    <input type="text" name = "post_name" class="form-control" id="post_name" placeholder="" required #ctrl="ngModel" required ngModel>
+  </div>
+
+  </div>
+
+
+
+
+  <div class = "form-group">
+    <editor name="post_content" ngModel apiKey = "qizf8kput6rtu5sn3hmtw5w3yzq1hakzp8x41difj14ra10l"></editor>
+  </div>
+
+
+          
+
+    </div>
+
+    <div class = "col-sm-3 postform-extras">
+      <div class="btn-group" role="group" aria-label="Basic example">
+      <button class = "btn btn-secondary">Preview</button>
+      <button class = "btn btn-primary">Publish...</button>
+      </div>
+
+
+      <div><p></p></div>
+        <ngb-accordion [closeOthers]="true" activeIds="static-7" class="accordion accordion-danger">
+          <ngb-panel id="static-7">
+            <ng-template ngbPanelTitle>
+              <h6 class="mb-0">
+                  Status & Visibility
+              </h6>
+            </ng-template>
+            <ng-template ngbPanelContent>
+
+  <div class="form-group">
+    <label for="post_status_visibility">Visibility</label>
+    <select class="form-control" id="post_status_visibility" name = "post_status_visibility" required #ctrl="ngModel"  ngModel>
+      <option value = "publish">Public</option>
+      <option value = "private">Private</option>
+      <option value = "password">Password Protected</option>
+    </select>
+  </div>
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-8">
+            <ng-template ngbPanelTitle>
+              <h6 class="mb-0">
+                  Featured Image
+              </h6>
+            </ng-template>
+            <ng-template ngbPanelContent>
+              
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-9">
+            <ng-template ngbPanelTitle>
+              <h6 class="mb-0">
+                  Discussion
+              </h6>
+            </ng-template>
+            <ng-template ngbPanelContent>
+   
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-9">
+            <ng-template ngbPanelTitle>
+              <h6 class="mb-0">
+                  Page Attributes
+              </h6>
+            </ng-template>
+            <ng-template ngbPanelContent>
+   
+            </ng-template>
+          </ngb-panel>          
+        </ngb-accordion>
+
+
+    </div>
+  </div>
+
+  
+</form>

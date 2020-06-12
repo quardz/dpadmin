@@ -49,6 +49,12 @@ import { TaxonomyComponent } from './dpadmin/taxonomy/taxonomy.component';
 import { TaxtableComponent } from './dpadmin/taxtable/taxtable.component';
 import { TestcompComponent } from './testcomp/testcomp.component';
 import { DpeditorComponent } from './dpadmin/dpeditor/dpeditor.component';
+import { CategoriesComponent } from './dpadmin/posts/categories/categories.component';
+import { PostTagComponent } from './dpadmin/posts/post-tag/post-tag.component';
+import { PostlistsComponent } from './dpadmin/posts/postlists/postlists.component';
+import { PostnewComponent } from './dpadmin/posts/postnew/postnew.component';
+import { FormlytinymceComponent } from './formlytinymce/formlytinymce.component';
+
 
 
 var _formly_settings = {
@@ -56,6 +62,10 @@ var _formly_settings = {
     validationMessages: [
         { name: 'required', message: 'This field is required' },
     ],
+    types: [
+        { name: 'tinymce', component: FormlytinymceComponent }
+    ],
+
 };
 
 @NgModule({
@@ -94,7 +104,11 @@ var _formly_settings = {
     TaxtableComponent,
     TestcompComponent,
     DpeditorComponent,
-
+    CategoriesComponent,
+    PostTagComponent,
+    PostlistsComponent,
+    PostnewComponent,
+    FormlytinymceComponent,
   ],
   imports: [
     BrowserModule,
@@ -103,7 +117,7 @@ var _formly_settings = {
     FormsModule, 
     NgbModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot(_formly_settings),
+    FormlyModule.forRoot(_formly_settings), 
     FormlyBootstrapModule,
     EditorModule,
     

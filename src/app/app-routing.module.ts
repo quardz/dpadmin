@@ -28,6 +28,10 @@ import { ComingsoonComponent } from './dpadmin/comingsoon/comingsoon.component';
 
 import { NewuserComponent } from './dpadmin/users/newuser/newuser.component';
 
+import { CategoriesComponent } from './dpadmin/posts/categories/categories.component';
+import { PostTagComponent } from './dpadmin/posts/post-tag/post-tag.component';
+import { PostlistsComponent } from './dpadmin/posts/postlists/postlists.component';
+import { PostnewComponent } from './dpadmin/posts/postnew/postnew.component';
 
 import { TestcompComponent } from './testcomp/testcomp.component';
 
@@ -39,6 +43,12 @@ const routes: Routes = [
   { path: 'admin/dashboard', component: DashboardComponent },
   { path: 'admin/testcomp', component: TestcompComponent },
 
+  //Posts
+  { path: 'admin/posts/lists', component: PostlistsComponent },
+  { path: 'admin/posts/new', component: PostnewComponent }, 
+  { path: 'admin/posts/categories', component: CategoriesComponent },
+  { path: 'admin/posts/tags', component: PostTagComponent },
+  
 
   //Users
   { path: 'admin/users/newuser', component: NewuserComponent },

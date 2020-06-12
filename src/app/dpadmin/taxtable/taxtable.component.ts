@@ -25,25 +25,50 @@ export class TaxtableComponent implements OnInit{
 
   ngOnInit() {
     this.terms = [
-      { id: 1, name: "John", description: "Smith", slug: "Ohio", count: 1, weight: 0 },
-      { id: 2, name: "Jane", description: "Doe", slug: "Iowa", count: 6, weight: 1 },
-      { id: 3, name: "Bill", description: "Great", slug: "Hawaii", count: 2, weight: 2 },
-      { id: 4, name: "Ted", description: "Adventure", slug: "Arizona", count: 0, weight: 3 },
+      { id: 1, name: "John", description: "Smith", slug: "Ohio", count: 1, weight: 0, _children: null },
+      { id: 2, name: "Jane", description: "Doe", slug: "Iowa", count: 6, weight: 1, _children: null },
+      { id: 3, name: "Bill", description: "Great", slug: "Hawaii", count: 2, weight: 2, _children: null },
+      { id: 4, name: "Ted", description: "Adventure", slug: "Arizona", count: 0, weight: 3, _children: [
+          {id: 5, name: "child 1", description: "Doe", slug: "Iowa", count: 6, weight: 1, _children: null},
+          {id: 6, name: "child 2", description: "Doe", slug: "Iowa", count: 6, weight: 1, _children: null},
+        ] 
+      },
     ];
 
     this.columnNames = [
-      { title: "Id", field: "id" },
-      { title: "Name", field: "name" },
-      { title: "Description", field: "description" },
-      { title: "Slug", field: "slug" },
-      { title: "Count", field: "count" },
-      { title: "Weight", field: "weight" },
-
+      { title: "Select", width: 40, formatter:"rowSelection", titleFormatter:"rowSelection", align:"center", headerSort:false},
+      { title: "Id", field: "id",visible:false },
+      { title: "Name", field: "name",editor:"input",headerFilter:"input" },
+      { title: "Description", field: "description",editor:"textarea" },
+      { title: "Slug", field: "slug",editor:"input" },
+      { title: "Count", field: "count",formatter:"link", formatterParams:{
+        labelField:"Count",
+        urlPrefix:"https://posts.com/postsbytax/",
+        } 
+      },
+      { title: "Weight", field: "weight",visible:false },
     ];
 
     // reference id of div where table is to be displayed (prepend #)
     
-    this.myTable = new Tabulator("#tabulator-div", {layout: 'fitColumns'}); 
+    
+
+    this.myTable = new Tabulator("#tabulator-div", 
+      {
+        layout: 'fitColumns',
+        selectable:true,
+        dataTree:true,
+        columns:[
+          {
+            formatter:"rowSelection", 
+            titleFormatter:"rowSelection", 
+            align:"center", 
+            headerSort:false
+          },
+        ]
+      }
+
+     ); 
     //this.myTable.layout(this.columnNames);
     this.myTable.setColumns(this.columnNames);
     this.myTable.setData(this.terms);
@@ -58,6 +83,7 @@ interface ITerm {
   slug: string,
   count: number,
   weight: number,
+  _children: any,
   //parent: number,
 }
 

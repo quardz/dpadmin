@@ -23,7 +23,7 @@ export class TaxonomyComponent implements OnInit {
     {
       key: 'tag_name',
       type: 'input',
-      wrappers: ['form-field-horizontal'],
+      //wrappers: ['form-field-horizontal'],
       templateOptions: {
         label: 'Name',
         type: 'text',
@@ -35,7 +35,7 @@ export class TaxonomyComponent implements OnInit {
     {
       key: 'tag_slug',
       type: 'input',
-      wrappers: ['form-field-horizontal'],
+      //wrappers: ['form-field-horizontal'],
       templateOptions: {
         label: 'Slug',
         type: 'text',
@@ -49,7 +49,7 @@ export class TaxonomyComponent implements OnInit {
       type: 'select',
       className: this.display_parent ? 'display' : 'hidden', 
       defaultValue: 'subscriber',
-      wrappers: ['form-field-horizontal'],
+      //wrappers: ['form-field-horizontal'],
       templateOptions: {
         label: 'Parent Category',
         required: false,
@@ -67,7 +67,7 @@ export class TaxonomyComponent implements OnInit {
     {
       key: 'description',
       type: 'textarea',
-      wrappers: ['form-field-horizontal'],
+      //wrappers: ['form-field-horizontal'],
       templateOptions: {
         label: 'Description',
         type: 'textarea',
