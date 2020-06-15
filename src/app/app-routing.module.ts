@@ -24,6 +24,8 @@ import { PostnewComponent } from './dpadmin/posts/postnew/postnew.component';
 import { TestcompComponent } from './testcomp/testcomp.component';
 
 
+import { WpimportComponent } from './dpadmin/tools/wpimport/wpimport.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/admin/dashboard', pathMatch: 'full' },
 
@@ -44,7 +46,7 @@ const routes: Routes = [
   //Tool
   { path: 'admin/tools', component: ComingsoonComponent },
   { path: 'admin/tools/tools', component: ComingsoonComponent },
-  { path: 'admin/tools/import', component: ComingsoonComponent },
+  { path: 'admin/tools/import', component: WpimportComponent },
   { path: 'admin/tools/export', component: ComingsoonComponent },
   { path: 'admin/tools/site-health', component: ComingsoonComponent },
   { path: 'admin/tools/export-personal-data', component: ComingsoonComponent },

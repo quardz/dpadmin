@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 import { Tabulator } from 'tabulator-tables';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -42,6 +43,7 @@ import { PostTagComponent } from './dpadmin/posts/post-tag/post-tag.component';
 import { PostlistsComponent } from './dpadmin/posts/postlists/postlists.component';
 import { PostnewComponent } from './dpadmin/posts/postnew/postnew.component';
 import { FormlytinymceComponent } from './formlytinymce/formlytinymce.component';
+import { WpimportComponent } from './dpadmin/tools/wpimport/wpimport.component';
 
 
 
@@ -84,6 +86,7 @@ var _formly_settings = {
     PostlistsComponent, 
     PostnewComponent,
     FormlytinymceComponent,
+    WpimportComponent,
   ],
   imports: [
     BrowserModule, 
@@ -95,6 +98,7 @@ var _formly_settings = {
     FormlyModule.forRoot(_formly_settings), 
     FormlyBootstrapModule,
     EditorModule,
+    HttpClientModule,
     
   ],
   exports: [

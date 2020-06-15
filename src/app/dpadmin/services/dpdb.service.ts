@@ -25,9 +25,6 @@ export class DpdbService{
   //if db exists, try to check if this db belongs to DP 
   //IF db exists, try check the tables are right 
 
-  setupdb() {
-
-  }
 
 
   checkDbExists() {
