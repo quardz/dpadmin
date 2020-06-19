@@ -21,10 +21,12 @@ import { PostTagComponent } from './dpadmin/posts/post-tag/post-tag.component';
 import { PostlistsComponent } from './dpadmin/posts/postlists/postlists.component';
 import { PostnewComponent } from './dpadmin/posts/postnew/postnew.component';
 
-import { TestcompComponent } from './testcomp/testcomp.component';
+import { TestcompComponent } from './testcomp/testcomp.component'; 
 
 
 import { WpimportComponent } from './dpadmin/tools/wpimport/wpimport.component';
+import { DptoolsComponent } from './dpadmin/tools/dptools/dptools.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/admin/dashboard', pathMatch: 'full' },
@@ -45,7 +47,7 @@ const routes: Routes = [
   
   //Tool
   { path: 'admin/tools', component: ComingsoonComponent },
-  { path: 'admin/tools/tools', component: ComingsoonComponent },
+  { path: 'admin/tools/tools', component: DptoolsComponent },
   { path: 'admin/tools/import', component: WpimportComponent },
   { path: 'admin/tools/export', component: ComingsoonComponent },
   { path: 'admin/tools/site-health', component: ComingsoonComponent },

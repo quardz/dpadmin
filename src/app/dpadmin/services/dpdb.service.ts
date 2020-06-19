@@ -25,13 +25,24 @@ export class DpdbService{
   //if db exists, try to check if this db belongs to DP 
   //IF db exists, try check the tables are right 
 
+  setCurrentDB(db_name){
+    this.cookieService.set('db_name', db_name);
+    this.db_name = db_name;
+    //@todo add more methods to store, like server side, BC side etc
+  }
+
+  getCurrentDB() {
+    return this.cookieService.get('db_name');
+  }
 
 
-  checkDbExists() {
+
+  getallDBs() {
     const dbList = this.nsql.listDatabases();
     if(dbList) {
-      
+      return dbList;      
     }
+    return false;
   }
 
   createdbwithdata(db_name) {
@@ -45,13 +56,7 @@ export class DpdbService{
     })    
     .then((tables)=>{
       console.log("tables", tables);
-      return nSQL("users").query("upsert", {user_login: "Jeb", user_registered: 20}).exec();
-    })
-    .then(() => {
-      return nSQL("users").query("select").exec();
-    })
-    .then((rows) => {
-      console.log(rows);
+
     })
     .catch(() => {
       console.log('error creating db');

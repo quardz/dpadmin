@@ -44,6 +44,7 @@ import { PostlistsComponent } from './dpadmin/posts/postlists/postlists.componen
 import { PostnewComponent } from './dpadmin/posts/postnew/postnew.component';
 import { FormlytinymceComponent } from './formlytinymce/formlytinymce.component';
 import { WpimportComponent } from './dpadmin/tools/wpimport/wpimport.component';
+import { DptoolsComponent } from './dpadmin/tools/dptools/dptools.component';
 
 
 
@@ -87,6 +88,7 @@ var _formly_settings = {
     PostnewComponent,
     FormlytinymceComponent,
     WpimportComponent,
+    DptoolsComponent,
   ],
   imports: [
     BrowserModule, 

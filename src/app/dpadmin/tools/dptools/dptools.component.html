@@ -1,0 +1,9 @@
+
+<h4>Current Database : <span>{{ current_db }}</span></h4>
+
+<h5>List of Databases</h5>
+
+  <li *ngFor="let db_item of db_list; let i = index">
+     {{ db_item }}
+  </li>
+
