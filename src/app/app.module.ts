@@ -1,5 +1,5 @@
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -8,7 +8,7 @@ import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 import { Tabulator } from 'tabulator-tables';
 import { HttpClientModule } from '@angular/common/http';
 
-
+import { WpcoreService } from './core/wpcore.service';
 
 import { AppRoutingModule } from './app-routing.module';
 //import { EditorModule } from '@tinymce/tinymce-angular';
@@ -23,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
+
 
 import { GeneralComponent } from './dpadmin/settings/general/general.component';
 import { FormlyHorizontalWrapper } from './dpadmin/settings/general/horizontal-wrapper';
@@ -45,6 +46,7 @@ import { PostnewComponent } from './dpadmin/posts/postnew/postnew.component';
 import { FormlytinymceComponent } from './formlytinymce/formlytinymce.component';
 import { WpimportComponent } from './dpadmin/tools/wpimport/wpimport.component';
 import { DptoolsComponent } from './dpadmin/tools/dptools/dptools.component';
+
 
 
 
@@ -87,7 +89,6 @@ var _formly_settings = {
     PostlistsComponent, 
     PostnewComponent,
     FormlytinymceComponent,
-    WpimportComponent,
     DptoolsComponent,
   ],
   imports: [
@@ -107,6 +108,7 @@ var _formly_settings = {
   ],
 
   providers: [
+    WpcoreService,
    // { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' },
   ],
   bootstrap: [AppComponent],
