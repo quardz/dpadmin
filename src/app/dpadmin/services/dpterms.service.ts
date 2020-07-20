@@ -30,26 +30,7 @@ export class DptermsService {
   }
 }
 
-/*
-Name : Adalarasu Deivasigamani
-USD 9000
-3000$ for developement(3 months) and 6000$ for Go to market(6 months), paid 500$ every 2 weeks for 9 months totally 
-
-Wallet address : 0x369799e8308bfd8d32fe4709db82af51e6f1cc60
-Wallet holder full name : adalarasu deivasigamani 
-
-Grant purpose
-  To build content management system similar (UX/UI and entity structure) to wordpress but works on top of Arweave blockchaon
-Milestone: copy from milestone already shared 
-
-Contact information
-  Adalarasu Deivasigamani
-  Mr
-  jitadal@gmail.com
-
-  Al KyC documents
 
 
-*/
 
 
